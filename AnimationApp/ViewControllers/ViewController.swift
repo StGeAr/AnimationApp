@@ -45,9 +45,9 @@ extension ViewController {
         animationDescription.text = """
             preset: \(currentAnimation.preset)
             curve: \(currentAnimation.curve)
-            force: \(currentAnimation.force)
-            duration: \(currentAnimation.duration)
-            delay: \(currentAnimation.delay)
+            force: \(String(format: "%.2f", currentAnimation.force))
+            duration: \(String(format: "%.2f", currentAnimation.duration))
+            delay: \(String(format: "%.2f",currentAnimation.delay))
         """
     }
     
