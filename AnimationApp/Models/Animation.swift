@@ -5,7 +5,7 @@
 //  Created by Герман Ставицкий on 05.04.2022.
 //
 
-import Foundation
+import Spring
 
 struct Animation {
     
@@ -16,11 +16,24 @@ struct Animation {
     let delay: Double
     
     static func getAnimationList() -> [Animation] {
-        [
-            Animation(preset: "slideLeft", curve: "easeIn", force: 0.75, duration: 1.20, delay: 0.30),
-            Animation(preset: "slideRight", curve: "easeOut", force: 0.80, duration: 1.60, delay: 0.25),
-            Animation(preset: "slideDown", curve: "linear", force: 0.70, duration: 1.30, delay: 0.35),
-            Animation(preset: "slideUp", curve: "spring", force: 0.85, duration: 1.40, delay: 0.40)
-        ]
+
+        var animations: [Animation] = []
+
+        let presets = Spring.AnimationPreset.allCases.shuffled()
+        let curve = Spring.AnimationCurve.allCases.shuffled()
+
+        let iterationCount = Spring.AnimationPreset.allCases.count
+
+        for index in 0..<iterationCount {
+            let animation = Animation(
+                preset: presets[index].rawValue,
+                curve: curve[index].rawValue,
+                force: Double.random(in: 0.70...0.90),
+                duration: Double.random(in: 1.20...1.60),
+                delay: Double.random(in: 0.25...0.50)
+            )
+            animations.append(animation)
+        }
+        return animations
     }
 }
