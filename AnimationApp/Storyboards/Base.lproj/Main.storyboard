@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQ7-NG-f1g">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQ7-NG-f1g" customClass="SpringView" customModule="Spring">
                                 <rect key="frame" x="40" y="45" width="240" height="150"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odq-ZZ-EUi">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odq-ZZ-EUi">
                                         <rect key="frame" x="97" y="63.5" width="46" height="23"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -34,7 +34,7 @@
                                     <constraint firstAttribute="height" constant="150" id="wMZ-iX-x7M"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrY-fp-Vlc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrY-fp-Vlc" customClass="SpringButton" customModule="Spring">
                                 <rect key="frame" x="40" y="481.5" width="240" height="35"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -55,6 +55,11 @@
                             <constraint firstItem="DQ7-NG-f1g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="rr7-sk-7cM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationButton" destination="LrY-fp-Vlc" id="res-eG-Smf"/>
+                        <outlet property="animationDescription" destination="odq-ZZ-EUi" id="Teb-2G-E00"/>
+                        <outlet property="animationView" destination="DQ7-NG-f1g" id="X1D-An-Y9B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
