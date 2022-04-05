@@ -14,6 +14,7 @@
 		DE999D0327FC8582005A726C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE999D0127FC8582005A726C /* Main.storyboard */; };
 		DE999D0527FC8583005A726C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE999D0427FC8583005A726C /* Assets.xcassets */; };
 		DE999D0827FC8583005A726C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE999D0627FC8583005A726C /* LaunchScreen.storyboard */; };
+		DEA65FD527FCBA5500ED98A0 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA65FD427FCBA5500ED98A0 /* Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		DE999D0427FC8583005A726C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE999D0727FC8583005A726C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE999D0927FC8583005A726C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA65FD427FCBA5500ED98A0 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		EC0D9BECBE423E82EF6E9C64 /* Pods-AnimationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationApp.debug.xcconfig"; path = "Target Support Files/Pods-AnimationApp/Pods-AnimationApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +50,6 @@
 				EC0D9BECBE423E82EF6E9C64 /* Pods-AnimationApp.debug.xcconfig */,
 				37BC3C0AD2186431FB2850FD /* Pods-AnimationApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -120,6 +121,7 @@
 		DE999D1327FC875C005A726C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DEA65FD427FCBA5500ED98A0 /* Animation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -249,6 +251,7 @@
 			files = (
 				DE999D0027FC8582005A726C /* ViewController.swift in Sources */,
 				DE999CFC27FC8582005A726C /* AppDelegate.swift in Sources */,
+				DEA65FD527FCBA5500ED98A0 /* Animation.swift in Sources */,
 				DE999CFE27FC8582005A726C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
