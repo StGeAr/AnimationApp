@@ -36,6 +36,10 @@ class ViewController: UIViewController {
         changeAnimation()
     }
     
+}
+
+//MARK: - Private methods
+extension ViewController {
     private func updateAnimationDescription() {
         let currentAnimation = animations[animationIndex]
         animationDescription.text = """
@@ -60,13 +64,18 @@ class ViewController: UIViewController {
         animationIndex += 1
         
         if animationIndex < animations.count {
-            animationButton.setTitle(animations[animationIndex].preset, for: .normal)
+            animationButton.setTitle(
+                "Run \(animations[animationIndex].preset)",
+                for: .normal
+            )
             return
         }
         
         animationIndex = 0
-        animationButton.setTitle(animations[animationIndex].preset, for: .normal)
+        animationButton.setTitle(
+            "Run \(animations[animationIndex].preset)",
+            for: .normal
+        )
     }
-        
 }
 
